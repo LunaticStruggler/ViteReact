@@ -125,6 +125,14 @@ nav {
     height: auto;
 }
 
+.contact-link {
+    left: 420px;
+    position: absolute;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
 
 .hero {
     display: flex;
