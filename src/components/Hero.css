@@ -1,0 +1,96 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 110px 60px;
+    background-color: rgb(99,102,241);
+    background: linear-gradient(360deg, rgba(99, 102, 241, 0.1) 0%, rgb(218, 70, 239, 0.05) 42%, rgb(241, 244, 253, 0.07) 83%);
+}
+
+.hero-text {
+    max-width: 50%;
+    text-align: left;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 10px;
+    margin-left: 150px;
+    line-height: 1.2;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 15px;
+    margin-left: 150px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: left; 
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 140px;
+    gap: 20px;
+}
+
+.app-buttons a img {
+    width: 150px;
+}
+
+.discover-more-container {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+
+.discover-more img {
+    width: 55px;
+    height: 55px;
+    top: 6px;
+    left: -13px;
+    position: relative;
+}
+
+.discover-text {
+    margin-left: -9px;
+    font-size: 1rem;
+    color: #333;
+}
+
+.hero-image {
+    position: absolute;
+    right: 370px;
+    top: 37%;
+    transform: translateY(-20%);
+    max-width: 25%;
+}
+
+.hero-image img {
+    width: 170%;
+    height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.dark-mode {
+    background-color: #121212;
+}
+
+.dark-mode .hero-text h2 {
+    color: #ffffff;
+}
+
+.dark-mode .hero-text p {
+    color: #aaaaaa;
+}
+
+.dark-mode .discover-text {
+    color: #ffffff;
+}
