@@ -43,7 +43,7 @@ function App() {
     }, []);
 
     return (
-        <Router>
+        <Router basename="/Figma"> {/* Set the base path */}
             <div className={`App ${darkMode ? 'dark' : ''}`}>
                 <Header darkMode={darkMode} onToggleDarkMode={() => setDarkMode(!darkMode)} />
                 
