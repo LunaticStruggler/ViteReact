@@ -1,0 +1,120 @@
+.features2-section {
+    padding: 80px 20px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.left-column, .right-column {
+    flex: 0 1 45%;
+    min-width: 280px;
+    max-width: 450px;
+    text-align: left;
+}
+
+.left-column h2, .right-column h2 {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.features-list li {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.features-list li img.icon-checkmark {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #6C63FF;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.right-column p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.features-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.feature {
+    text-align: left;
+    flex-basis: 48%;
+}
+
+.icon-placeholder {
+    background-color: #e0e0e0;
+    width: 40px;
+    height: 40px;
+    margin: 0 0 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.feature p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+
+.dark-mode {
+    background-color: #121212;
+}
+
+.dark-mode h2, .dark-mode p {
+    color: #ffffff;
+}
+
+.dark-mode .cta-button {
+    background-color: #5A56E3;
+}

@@ -1,0 +1,28 @@
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #666;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.footer.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+.footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.footer.dark-mode a {
+    color: #ffffff;
+}

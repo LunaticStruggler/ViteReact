@@ -28,6 +28,7 @@ nav {
 .logo {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo img {
@@ -65,7 +66,7 @@ nav {
     align-items: center;
 }
 
- /*Jag använde chatgpt för theme switch grejen*/
+
 .theme-switch {
     display: flex;
     align-items: center;
@@ -106,7 +107,7 @@ nav {
 #theme-toggle:checked + label:before {
     transform: translateX(20px);
 }
- /*Jag använde chatgpt för theme switch grejen*/
+
  
 .sign-in {
     display: flex;
@@ -210,6 +211,10 @@ nav {
 .hero-image img {
     width: 170%;
     height: auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 
