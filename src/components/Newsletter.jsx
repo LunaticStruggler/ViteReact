@@ -8,10 +8,15 @@ const Newsletter = ({ darkMode }) => {
   const [errorMessage, setErrorMessage] = useState('');
   const [isValid, setIsValid] = useState(true);
 
+  const validateEmail = (email) => {
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return re.test(email);
+  };
+
   const handleSubscribe = async (e) => {
     e.preventDefault();
 
-    if (!email) {
+    if (!email || !validateEmail(email)) {
       setErrorMessage('Please enter a valid email address.');
       setIsValid(false);
       setTimeout(() => {

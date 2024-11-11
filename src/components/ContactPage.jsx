@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import './ContactPage.css'; 
 
 const ContactPage = ({ darkMode }) => {
@@ -6,21 +7,40 @@ const ContactPage = ({ darkMode }) => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [error, setError] = useState('');
+    const [success, setSuccess] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        
         if (!name || !email || !message) {
             setError('All fields are required.');
+            setTimeout(() => setError(''), 5000);
             return;
         }
 
-        
         setError('');
 
-        
-        alert('Form submitted successfully!');
+        const contactData = {
+            fullName: name,
+            email: email,
+            message: message,
+        };
+
+        try {
+            const response = await axios.post(
+                'https://win24-assignment.azurewebsites.net/api/contact',
+                contactData,
+                { headers: { 'Content-Type': 'application/json' } }
+            );
+            setSuccess('Your message has been sent successfully!');
+            setName('');
+            setEmail('');
+            setMessage('');
+            setTimeout(() => setSuccess(''), 5000);
+        } catch (err) {
+            setError('Failed to send your message. Please try again later.');
+            setTimeout(() => setError(''), 5000);
+        }
     };
 
     return (
@@ -30,6 +50,7 @@ const ContactPage = ({ darkMode }) => {
                 <p>If you have any questions or inquiries, feel free to reach out to us.</p>
 
                 {error && <div className="error">{error}</div>}
+                {success && <div className="success">{success}</div>}
 
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <label htmlFor="name">Your Name</label>
