@@ -25,10 +25,8 @@ function App() {
         const fetchData = async () => {
             try {
                 setLoading(true);
-
                 const testimonialsResponse = await axios.get('https://win24-assignment.azurewebsites.net/api/testimonials');
                 setTestimonials(testimonialsResponse.data);
-
                 const faqResponse = await axios.get('https://win24-assignment.azurewebsites.net/api/faq');
                 setFaqData(faqResponse.data);
             } catch (error) {
@@ -43,7 +41,7 @@ function App() {
     }, []);
 
     return (
-        <Router basename="/ViteReact"> {/* Set the base path */}
+        <Router basename="/ViteReact">
             <div className={`App ${darkMode ? 'dark' : ''}`}>
                 <Header darkMode={darkMode} onToggleDarkMode={() => setDarkMode(!darkMode)} />
                 

@@ -19,12 +19,22 @@ const Faq = ({ faqData, darkMode }) => {
           <div
             className={`faq-item ${expandedIndex === index ? 'expanded' : ''} ${darkMode ? 'dark-mode' : ''}`}
             onClick={() => toggleFaq(index)}
-            key={index}
+            key={faqItem.id}
           >
-            <h4 className={darkMode ? 'dark-text' : ''}>{faqItem.question}</h4>
-            <img src="/ViteReact/Images/Icons/arrow.png" alt="dropdown" />
+            <div className="faq-question">
+              <h4 className={darkMode ? 'dark-text' : ''}>
+                {faqItem.title}
+              </h4>
+              <img
+                src="/ViteReact/Images/Icons/arrow.png"
+                alt="dropdown"
+                className={`arrow-icon ${expandedIndex === index ? 'rotated' : ''}`}
+              />
+            </div>
             {expandedIndex === index && (
-              <p className={darkMode ? 'dark-text' : ''}>{faqItem.answer}</p>
+              <div className="faq-answer">
+                <p className={darkMode ? 'dark-text' : ''}>{faqItem.content}</p>
+              </div>
             )}
           </div>
         ))}
