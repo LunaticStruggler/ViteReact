@@ -22,7 +22,7 @@ const Faq = ({ faqData, darkMode }) => {
             key={index}
           >
             <h4 className={darkMode ? 'dark-text' : ''}>{faqItem.question}</h4>
-            <img src="/ViteReact/public/Images/Icons/arrow.png" alt="dropdown" />
+            <img src="/ViteReact/Images/Icons/arrow.png" alt="dropdown" />
             {expandedIndex === index && (
               <p className={darkMode ? 'dark-text' : ''}>{faqItem.answer}</p>
             )}

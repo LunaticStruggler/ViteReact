@@ -11,22 +11,22 @@ function Contact({ darkMode }) {
 
         <div className="contact-preview-boxes">
           <div className={`contact-preview-box ${darkMode ? 'dark-mode' : ''}`}>
-            <img src="/ViteReact/public/Images/Icons/telephone.png" alt="Phone" />
+            <img src="/ViteReact/Images/Icons/telephone.png" alt="Phone" />
             <div>
               <p>Still have questions?</p>
               <a href="ContactPage.jsx">
                 Contact us
-                <img src="/ViteReact/public/Images/Icons/purplearrow.png" alt="Arrow" />
+                <img src="/ViteReact/Images/Icons/purplearrow.png" alt="Arrow" />
               </a>
             </div>
           </div>
           <div className={`contact-preview-box ${darkMode ? 'dark-mode' : ''}`}>
-            <img src="/ViteReact/public/Images/Icons/message.png" alt="Message" />
+            <img src="/ViteReact/Images/Icons/message.png" alt="Message" />
             <div>
               <p>Don't like phone calls?</p>
               <a href="ContactPage.jsx">
                 Contact us
-                <img src="/ViteReact/public/Images/Icons/greenarrow.png" alt="Arrow" />
+                <img src="/ViteReact/Images/Icons/greenarrow.png" alt="Arrow" />
               </a>
             </div>
           </div>

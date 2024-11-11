@@ -10,18 +10,18 @@ function Hero({ darkMode }) {
         <p>We offer you a new generation of mobile banking.</p>
         <p>Save, spend & manage money in your pocket.</p>
         <div className="app-buttons">
-          <a href="#"><img src="/ViteReact/public/Images/Miscellaneous/appstore.png" alt="App Store" /></a>
-          <a href="#"><img src="/ViteReact/public/Images/Miscellaneous/playstore.png" alt="Google Play" /></a>
+          <a href="#"><img src="/ViteReact/Images/Miscellaneous/appstore.png" alt="App Store" /></a>
+          <a href="#"><img src="/ViteReact/Images/Miscellaneous/playstore.png" alt="Google Play" /></a>
         </div>
         <div className="discover-more-container">
           <a href="#" className="discover-more">
-            <img src="/ViteReact/public/Images/Icons/button.png" alt="Arrow" />
+            <img src="/ViteReact/Images/Icons/button.png" alt="Arrow" />
           </a>
           <span className="discover-text">Discover more</span>
         </div>
       </div>
       <div className="hero-image">
-        <img src="/ViteReact/public/Images/Phones/correctphone.png" alt="App Preview" />
+        <img src="/ViteReact/Images/Phones/correctphone.png" alt="App Preview" />
       </div>
     </section>
   );

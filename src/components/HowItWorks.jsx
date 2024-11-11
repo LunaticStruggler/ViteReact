@@ -8,9 +8,9 @@ function HowItWorks({ darkMode }) {
         <h2 className={darkMode ? 'dark-text' : ''}>How does it work?</h2>
       </div>
       <div className="phones-container">
-        <img src="/ViteReact/public/Images/Phones/leftphon.png" alt="Phone Left" className="phone phone-left" />
-        <img src="/ViteReact/public/Images/Phones/midphone.png" alt="Phone Center" className="phone phone-center" />
-        <img src="/ViteReact/public/Images/Phones/rightphone.png" alt="Phone Right" className="phone phone-right" />
+        <img src="/ViteReact/Images/Phones/leftphon.png" alt="Phone Left" className="phone phone-left" />
+        <img src="/ViteReact/Images/Phones/midphone.png" alt="Phone Center" className="phone phone-center" />
+        <img src="/ViteReact/Images/Phones/rightphone.png" alt="Phone Right" className="phone phone-right" />
       </div>
       <div className="section-description">
         <h3 className={darkMode ? 'dark-text' : ''}>Latest transaction history</h3>

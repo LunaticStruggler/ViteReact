@@ -45,14 +45,14 @@ const Newsletter = ({ darkMode }) => {
     <section className={`newsletter-section ${darkMode ? 'dark-mode' : ''}`}>
       <div className="newsletter-box">
         <div className="newsletter-icon">
-          <img src="/ViteReact/public/Images/Icons/Bell.png" alt="Bell Icon" />
+          <img src="/ViteReact/Images/Icons/Bell.png" alt="Bell Icon" />
         </div>
         <div className={`newsletter-text ${darkMode ? 'dark-text' : ''}`}>
           Subscribe to our newsletter to stay informed about the latest updates
         </div>
         <form className="newsletter-form" onSubmit={handleSubscribe}>
           <div className="email-input-wrapper">
-            <img src="/ViteReact/public/Images/Icons/envelope.png" alt="Envelope Icon" className="email-icon" />
+            <img src="/ViteReact/Images/Icons/envelope.png" alt="Envelope Icon" className="email-icon" />
             <input
               type="email"
               placeholder="Your Email"
