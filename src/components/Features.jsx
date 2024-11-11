@@ -5,16 +5,16 @@ function Features({ darkMode }) {
   return (
     <section id="features-section" className={`features-section ${darkMode ? 'dark-mode' : ''}`}>
       <div className="company-logos">
-        <img src="public/Images/Logos/logo1.png" alt="Company 1" />
-        <img src="public/Images/Logos/logo2.png" alt="Company 2" />
-        <img src="public/Images/Logos/logo3.png" alt="Company 3" />
-        <img src="public/Images/Logos/logo4.png" alt="Company 4" />
-        <img src="public/Images/Logos/logo5.png" alt="Company 5" />
-        <img src="public/Images/Logos/logo6.png" alt="Company 6" />
+        <img src="/ViteReact/public/Images/Logos/logo1.png" alt="Company 1" />
+        <img src="/ViteReact/public/Images/Logos/logo2.png" alt="Company 2" />
+        <img src="/ViteReact/public/Images/Logos/logo3.png" alt="Company 3" />
+        <img src="/ViteReact/public/Images/Logos/logo4.png" alt="Company 4" />
+        <img src="/ViteReact/public/Images/Logos/logo5.png" alt="Company 5" />
+        <img src="/ViteReact/public/Images/Logos/logo6.png" alt="Company 6" />
       </div>
       <div className="features-container">
         <div className="phone-image">
-          <img src="public/Images/Phones/secondphone.png" alt="App on Phone" />
+          <img src="/ViteReact/public/Images/Phones/secondphone.png" alt="App on Phone" />
         </div>
         <div className="features-content">
           <h2>App Features</h2>
@@ -29,7 +29,7 @@ function Features({ darkMode }) {
               { icon: 'icon6.png', title: 'Top Standards', description: 'Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.' }
             ].map((feature, index) => (
               <div className="feature-item" key={index}>
-                <img src={`public/Images/Icons/${feature.icon}`} alt={feature.title} />
+                <img src={`/ViteReact/public/Images/Icons/${feature.icon}`} alt={feature.title} />
                 <h3>{feature.title}</h3>
                 <p>{feature.description}</p>
               </div>

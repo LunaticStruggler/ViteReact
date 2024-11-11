@@ -18,7 +18,7 @@ function Testimonials({ testimonials, darkMode }) {
           {testimonials.map((testimonial) => (
             <div className={`testimonial-card ${darkMode ? 'dark-card' : ''}`} key={testimonial.id}>
               <img
-                src="Images/Icons/quotes.png"
+                src="/ViteReact/Images/Icons/quotes.png"
                 alt="Quote Icon"
                 className="quote-icon"
               />
@@ -30,7 +30,7 @@ function Testimonials({ testimonials, darkMode }) {
               </p>
               <div className="testimonial-footer">
                 <img
-                  src={testimonial.avatarUrl || "Images/Miscellaneous/default-avatar.png"} 
+                  src={testimonial.avatarUrl || "/ViteReact/Images/Miscellaneous/default-avatar.png"} 
                   alt="User Avatar"
                   className="avatar-img"
                 />

@@ -11,7 +11,7 @@ function Header({ darkMode, onToggleDarkMode }) {
     <header className={darkMode ? 'dark-mode' : ''}>
       <nav>
         <Link to="/" className="logo">
-          <img src="public/Images/Logos/logga.PNG" alt="Silicon Logo" />
+          <img src="/ViteReact/public/Images/Logos/logga.PNG" alt="Silicon Logo" />
           <h1>Silicon</h1>
         </Link>
         <ul className="nav-links">
@@ -26,7 +26,7 @@ function Header({ darkMode, onToggleDarkMode }) {
             <label htmlFor="theme-toggle"></label>
           </div>
           <a href="#" className={`sign-in ${darkMode ? 'dark-mode' : ''}`}>
-            <img src="public/Images/Icons/login.png" alt="Sign Up Icon" className="sign-in-icon" />
+            <img src="/ViteReact/public/Images/Icons/login.png" alt="Sign Up Icon" className="sign-in-icon" />
             Sign in / up
           </a>
           <Link to="/contact" className={`header-contact-link ${darkMode ? 'dark-text' : ''}`}>
